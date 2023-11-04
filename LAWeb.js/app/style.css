@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 50rem;
+}
+.homeBanner{
+    position: relative;
+    background-image: url(../asset/images/02.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    min-height: 3rem;
+    width: 100%;
+}
+.logo{
+    background-image: url(../asset/images/logo.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px #e2dcdc;
+    margin-top: 0.2rem;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav--link{
+    margin: 1rem;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.brandName{
+    position: absolute;
+    top: 8rem;
+    left: 10rem;
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    height: 8rem;
+}
+.brandName span{
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.titleOne{
+    text-transform: uppercase;
+    color: rgb(81, 81, 81);
+} 
+.titleTwo{
+    text-transform: uppercase;
+    color: rgb(66, 66, 145);
+}
+.historyPage{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(252, 252, 252);
+}
+.logoName{
+    display: flex;
+    align-items: center;
+}
+.logoName--title{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+.history ul{
+    display: flex;
+    list-style: none;
+}
+.history--link{
+    margin: 1rem;
+    color: rgb(5, 5, 5);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.historyBanner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../asset/images/history.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.details{
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    padding: 3rem;
+    align-items: center;
+}
+.title{
+    display: flex;
+    align-items: baseline;
+}
+.title--num{
+    font-size: 7rem;
+    margin: 0;
+    padding: 0;
+}
+.title--name{
+    margin-left: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(42, 39, 105);
+}
+.overlay{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 10rem;
+    background-color: rgba(0, 24, 76, 0.6);
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.carousel{
+    width: 100%;
+    height: 5rem;
+   text-align: center;
+}
+img{
+    max-width: 100%;
+    height: 100%;
+    margin-left: 0.5rem;
+}
+.teamPage{
+    width: 50%;
+    min-height: 4rem;
+    display: flex;
+    margin: 6rem auto 0;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    margin-left: 4rem;
+}
+.teamNav{
+    background-color: rgb(94, 39, 234);
+    display: flex;
+    width: 100%;
+    min-height: 3.2rem;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    align-items:flex-end;
+}
+.teamNav ul{
+    display: flex;
+    list-style: none;
+}
+.teamNav ul li a{
+    margin-left: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(127, 127, 127);
+}
+#activeTeamNav{
+    background-color: rgb(166, 166, 166);
+    padding: 1rem;
+}
+.btns ul{
+    display: flex;
+    list-style: none;
+}
+.btns ul li{
+    width: 0.5rem;
+    min-height: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid rgb(166, 166, 166);
+    margin: 0.5rem;
+    cursor: pointer;
+}
+#activeBtn{
+    background-color: rgb(166, 166, 166);
+}
+.teamBanner{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url(../asset/images/birds.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+.plans{
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+    width:18rem;
+    min-height: 13rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(224, 219, 219,0.7);
+    padding: 1rem;
+}
+.teamBanner h2{
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.teamBanner .dates{
+    display: flex;
+    justify-content: space-between;
+}
+.footer{
+    width: 100%;
+    min-height: 3rem;
+    display: flex;
+    background-color: rgb(94, 39, 234);
+    color: rgba(220, 220, 220, 0.654);
+    text-transform: uppercase;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .container{
+        width: 100%;
+    }
+    .brandName{
+        position: absolute;
+        top: 8rem;
+        left: 1rem;
+        width: 15rem;
+        height: 4rem;
+    }
+    .brandName span{
+        font-size: 2rem;
+    }
+    .details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel{
+        width: 100%;
+        height: 2rem;
+    }
+   img{
+    max-width: 100%;
+   }
+   .teamPage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+   .plans{
+    display: flex;
+    justify-content: flex-start;
+   justify-content: center;
+
+   }
+   .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+}
