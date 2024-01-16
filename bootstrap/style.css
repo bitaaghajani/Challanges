@@ -1,0 +1,200 @@
+body{
+    font-family: 'Montserrat' , sans-serif
+}
+
+header{
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0, .5),rgba(0,0,0, .6) ) ,url(better-smartphone-photos.jpg) no-repeat center center /cover;
+}
+
+
+/* banner */
+.banner{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-70%,-70%);
+    width: 80%;
+}
+.banner-header{
+    animation-name: anim;
+    animation-duration: 2s;
+}
+.banner-par{
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .4s;
+    animation-fill-mode: backwards;
+}
+@keyframes anim{
+    0%{
+        transform: translatex(-100);
+        opacity: 0;
+
+    }
+    100%{
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+/*end of banner */
+/* navbar */
+.nav-menu{
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8));
+    padding: 30px;
+}
+.menu-item{
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: color .5s;
+}
+.menu-item :hover{
+    color: rgb(18, 175, 123);
+}
+.line1 , .line2 , .line3{
+    width: 20px;
+    height: 2px;
+    margin: 3px;
+}
+.line1{
+    transform: rotate(-45deg) translate(-4px, -3px);
+}
+.line2{
+    opacity: 0;
+}
+.line3{
+    transform: rotate(45deg) translate(-10px,-3px);
+}
+/*end of navbar */
+.mission{
+    background:rgb(9, 12, 12);
+}
+.fromleft{
+    animation-name:fromLeft;
+    animation-duration: 3s;
+}
+.fromRight{
+    animation-name:fromLeft;
+    animation-duration: 3s;
+}
+@keyframes fromLeft{
+    0%{
+        transform: translatex(-120px);
+        opacity: 0;
+
+    }
+    100%{
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+@keyframes fromRight{
+    0%{
+        transform: translatex(30px);
+        opacity: 0;
+
+    }
+    100%{
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+
+
+/* colloction */
+.card-coll{
+    box-shadow: 5px 8px 20px #444;
+}
+.heading{
+    position: absolute;
+    top: 70%;
+    right: 0%;
+    background: #444;
+    font-size: 18px;
+    opacity: .4;
+    width: 70%;
+    transition: all .4s;
+    cursor: pointer;
+    padding: 5px;
+}
+.heading :hover{
+    opacity: 1;
+}
+/*end of colloction */
+
+/* gallery */
+.gallery-list-item{
+    color: #444;
+    cursor: pointer;
+    user-select: none;
+}
+.activity-item{
+    color: blue;
+}
+/*end of gallery */
+/* pricing */
+ .card-1 , .card-2 , .card-3{
+     background: url(o2dvsv2pnhe.jpg) center no-repeat /cover;
+     box-shadow: 8px 18px 50px;
+ }
+ .card-list-item{
+     border-bottom: 1px groove grey;
+     width: 120px;
+     margin: auto;
+ }
+
+ 
+
+/*end of pricing */
+/* contact */
+.contact{
+    background: url(o2dvsv2pnhe.jpg)no-repeat right;
+}
+.input{
+    background: transparent;
+    background-color: transparent;
+}
+.inputf :focus{
+    background: transparent;
+    background-color: transparent;
+    box-shadow: none;
+    color: honeydew;
+    border-bottom:grey 2px solid;
+}
+.label{
+    color: #444;
+    display: block;
+   margin-top:-75px;
+   margin-left: 4px;
+   font-size: 14px;
+
+}
+.button-block{
+    background: darkred;
+    
+}
+.button-block :hover{
+    background: indigo;
+    transform: translateY(-3px);
+}
+input:placeholder-shown +label{
+    transform: translateY(20px,20px);
+    opacity: 0;
+    visibility: hidden;
+}
+/*
+end of contact */
+/* footer */
+.footer-link{
+    text-decoration: none;
+    color:black;
+
+}
+
+/*end of footer */
+
+
+
+
+
